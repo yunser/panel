@@ -59,7 +59,7 @@
             </div>
         </div> -->
         <div class="widgetList">
-            <div class="widget iframeBox" v-for="plugin in plugins">
+            <div class="widget iframeBox" v-for="plugin, index in plugins" :key="index">
                 <iframe class="iframe" :src="plugin.url" frameborder="0"></iframe>
             </div>
             <!-- <div class="widget todoBox">
